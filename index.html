@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="./Assets/js/script.js" type="module"></script>
+    <title>To do list</title>
+</head>
+<body class="flex beetwen column h-100">
+    <header>    
+        <h1 class="title flex center w-100" >Lista de Compras</h1>
+    </header>
+    <main>
+        <section>
+            <div id="container-lista" class="container">
+                <table class="w-100p">
+                    <thead>
+                        <tr>
+                            <th>
+                                Descrição
+                            </th>
+                            <th>
+                                Quantidade
+                            </th>
+                            <th>
+                                Valor
+                            </th>
+                            <th>
+                                Total
+                            </th>
+                            <th>
+                               Remover
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista">
+                        <!-- Conteudo da lista -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="container-cadastro" class="container">
+                <input type="text" id="input-desc"  placeholder="nome" />
+                <input type="number" id="input-quant" placeholder="quantidade" />
+                <input type="number" id="input-valor" placeholder="valor"/>
+                <input type="button" id="btn-gravar" value="Gravar">
+            </div>
+
+            <div id="container-total" class="container">
+                Total: <span id="box-total">00,00</span> reais
+            </div>
+        </section>
+    </main>
+    <footer class="flex center p-1">
+        Fábio Júnior Barbosa
+    </footer>
+</body>
+</html>
