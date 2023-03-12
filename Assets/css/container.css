@@ -1,0 +1,32 @@
+.container{
+    padding: 0.5rem;
+    margin: 1rem;
+
+    border-radius: 1rem;
+    border-width: 0.25rem;
+    border-style: solid;
+
+    background-color: #FFF;
+    color: #000
+}
+
+#container-lista {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#container-lista::-webkit-scrollbar {
+    border-radius: 0.5rem;
+    width: 1rem;
+}
+
+#container-lista::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    border-radius: 1rem;
+}
+
+#container-lista::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid rgb(114, 84, 105);
+}

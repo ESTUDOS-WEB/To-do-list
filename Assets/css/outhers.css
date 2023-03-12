@@ -1,0 +1,14 @@
+body {
+    background-color: #FF1493;
+    color: #FFFFFF;
+}
+
+.title {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Tabela */
+th, td {
+    text-align: center;
+}

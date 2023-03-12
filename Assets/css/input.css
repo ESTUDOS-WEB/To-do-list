@@ -1,0 +1,28 @@
+button, input[type="button"] {
+    margin: 2px;
+    padding: 3px;
+    border-radius: 0.25rem;
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color:red;
+}
+
+input[type="button"]:hover{
+    background-color:  red;
+}
+
+input[type="text"], input[type="number"]{
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+input[type="text"]:hover, input[type="number"]:hover{
+    background-color: antiquewhite;
+}

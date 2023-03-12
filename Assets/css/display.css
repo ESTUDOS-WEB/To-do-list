@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.beetwen{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.h-100{
+    height: 100vh;
+}
+.w-100{
+    width: 100vw;
+}
+
+.h-100p{
+    height: 100%;
+}
+.w-100p{
+    width: 100%;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.m-1{
+    margin: 1rem;
+}
