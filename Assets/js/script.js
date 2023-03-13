@@ -46,7 +46,8 @@ const App = {
         tr.appendChild(tdQuant);
         tr.appendChild(tdTotal);
         tr.appendChild(tdBtn);
-        tr.setAttribute('codigolista', item.codigo);
+        tr.setAttribute("id", "item-"+item.codigo);
+        tr.setAttribute("class", "item")
         
         return tr;
     },
@@ -57,15 +58,33 @@ const App = {
         App.calcularTotal();
         App.limparCampos();
     },
+
+    styleAdd(id){
+        const elementItem = Funcions.getId("item-"+id);
+        elementItem.setAttribute("class", "item add");
+        setTimeout(()=>{
+           elementItem.setAttribute("class", "item"); 
+        }, 1000);
+    },
     
+    styleRemove(id){
+        const elementItem = Funcions.getId("item-"+id);
+        elementItem.setAttribute("class", "remove");
+    },
+
+
     addItemLista (item) {
         lista.add(item);
         App.updateListaHTML();
+        App.styleAdd(item.codigo);
     },
 
     removeItemLista(id){
         lista.remove(id);
-        App.updateListaHTML();
+        App.styleRemove(id);
+        setTimeout(()=>{
+            App.updateListaHTML();
+        }, 1000);
     },
     
     verificarCampos(desc, quant, valor){
@@ -102,7 +121,6 @@ const App = {
         }        
     }
 }
-
 
 /*  Adicionando função em avento */
 elementBtnGravar.onclick = App.garvarItem;

@@ -12,3 +12,26 @@ body {
 th, td {
     text-align: center;
 }
+
+.item{
+    background-color: greenyellow;
+}
+
+.remove{
+    transition: all 1s;
+    transform: translateX(-600px);
+    background-color: crimson;
+}
+
+.add{
+    animation: moverParaDireita 0.5s ease-in-out;
+}
+
+@keyframes moverParaDireita{
+    0% {
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
